@@ -50,5 +50,3 @@ workflows:
           requires: [build]
       - say-world:
           requires: [say-hello]
-      - build:
-          requires: [say-world]
