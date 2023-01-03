@@ -46,6 +46,7 @@ workflows:
   say-hello-workflow:
     jobs:
       - build
-      - say-hello
+      - say-hello:
+          requires: [build]
       - say-world:
           requires: [say-hello]
